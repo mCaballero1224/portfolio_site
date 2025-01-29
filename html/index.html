@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="robots" content="noindex"> <!-- No bots! -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Michael Caballero</title>
@@ -10,15 +11,109 @@
 </head>
 
 <body>
-	<h1>Michael Caballero</h1>
-	<h2>Web Dev Concepts</h2>
-	<p>As it relates to websites and servers, the index is the first page
-		that a browser will request from a server (assuming a request for a
-		specific resource isn't made). For example, when visiting
-		<a href="https://mcaballero.dev/">this site</a>, you'll be served the
-		index.html file that resides on this webserver.
-	</p>
-	<script src="index.js"></script>
+
+	<header>
+		<h1>Michael Caballero</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<h2>Web Dev Concepts</h2>
+			<article>
+				<h3>Web Servers</h3>
+				<p>As it relates to websites and servers, <strong>the index</strong> is the first page that a browser will
+					request from a server (assuming a request for
+					a specific resource isn't made). For example, when visiting <a href="https://mcaballero.dev">this site</a>,
+					you'll be served the <em>index.html</em> file that resides on this webserver. From this
+					page, you can access the rest of the content
+					hosted here. </p>
+			</article>
+			<article>
+				<h3>Frontend Design</h3>
+				<!-- Paragraph on frontend design -->
+				<p><strong>Frontend design</strong> describes the graphical interface of a website and experience of interacting
+					with it. A good frontend design facilitates easy navigation of a web page. It should also include a consistent
+					color scheme, font and typography. Any visual media such as images or video should also fit into the design
+					scheme. While there are ideas that have held the test of time, trends in frontend design are always changing
+					so it's best to keep on your toes.
+				</p>
+				<h4><strong>The 5 E's of Usability</strong></h4>
+				<dl>
+					<dt>Effectiveness:</dt>
+					<dd>helps users meet their goal(s) and provide accurate results</dd>
+					<dt>Effeciency:</dt>
+					<dd>perform tasks with as few steps as possible; provide results quickly</dd>
+					<dt>Ease of navigation</dt>
+					<dd>users (especially new ones) should quickly understand how to navigate toward
+						their goal by interacting with the site; the navigation process is
+						memorable</dd>
+					<dt>Error-free</dt>
+					<dd>avoid accessibility/availability issues; learn from common UX errors users
+						experience</dd>
+					<dt>Enjoyable or Engaging</dt>
+					<dd>the site is enjoyable to use or engaging; the content and design fits target
+						audience needs such that they return to use it again</dd>
+				</dl>
+				<!-- Purpose of each layout tag -->
+				<h4>Layout Tags</h4>
+				<ul>
+					<li>&lt;header&gt;: sets the banner for a web page
+						<ul>
+							<li>info within usually includes the name of the page, the
+								publisher, and a marketing slogan</li>
+							<li>often remains consistent across pages to idenfify them as
+								part of the main site</li>
+							<li>Smaller headers are preferred so that there's more room for
+								the main content</li>
+						</ul>
+					<li>&lt;nav&gt; tag is used to denote the navigation section of the site, where
+						users can go to other pages of content</li>
+					<li>&lt;main&gt;: the primary block that contains the main content of the page
+					</li>
+					<li>&lt;section&gt;: used for the thematic grouping of content; usually followed
+						by an &lt;h1&gt; element to describe it</li>
+					<li>&lt;article&gt;: typically nested in a &lt;section&gt; element; used to
+						contain a single topic with an &lt;h2&gt; element as its title</li>
+					<li>&lt;aside&gt;: used for content related to an article; may also be used for
+						sidebars or unrelated content</li>
+					<li>&lt;figure&gt;: used for media; typically paired with a &lt;figcaption&gt;
+						element</li>
+					<li>&lt;blockquote&gt;: used for extended quotations, stylized by default to
+						stand out</li>
+					<li>&lt;footer&gt;: holds legal and contact information; links to critical
+						pages; usually contains the copyright statement
+					</li>
+					<li>&lt;div&gt;: placeholder element for dynamic content; has no style or
+						dimensions</li>
+				</ul>
+				<!-- How anchors link to external/internal 
+content, and from page to page -->
+				<ol>
+					<li>With an anchor (&lt;a&gt;) element, you can link to external
+						content using URLs such as <a href="https://google.com">https://google.com</a> for the tag's
+						<code>href</code> attribute.
+					</li>
+					<li>Similarly, you can link to content within a page using CSS IDs</li>
+					<li>You can link to content on other pages using URIs or relative
+						pathnames to resources on a webserver. This page's navbar is an
+						example of the latter.</li>
+				</ol>
+			</article>
+		</section>
+		<script src="index.js"></script>
+	</main>
+
+	<footer>
+		<p>&copy; Michael Caballero (2025)</p>
+	</footer>
+
 </body>
 
 </html>
