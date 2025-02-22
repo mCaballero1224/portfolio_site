@@ -153,8 +153,8 @@ nav ul li:hover a, .nav-highlight a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 50%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .social-link {
@@ -163,7 +163,7 @@ nav ul li:hover a, .nav-highlight a {
 }
 
 .social-img {
-  width: 25px;
+  width: 30px;
   margin: 0 auto;
   padding: 5px;
   background-color: var(--cornsilk);
