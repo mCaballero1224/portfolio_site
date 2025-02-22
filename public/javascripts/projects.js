@@ -36,6 +36,7 @@ const fetchprojects = async () => {
       projectLink.target = "_blank";
       projectDescriptionElement.textContent = project.project_description;
       projectImageElement.src = project.project_image;
+      projectImageElement.alt = `Image representing ${project_name}; also a link to its GitHub repo`
 
       // Append spans to list item
       li.id = project.project_name;

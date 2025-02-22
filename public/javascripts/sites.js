@@ -43,6 +43,7 @@ const fetchSites = async () => {
       authorElement.textContent = 'Author: ' + site.site_author;
       siteDescriptionElement.textContent = site.site_description;
       siteImageElement.src = site.site_image_link;
+      siteImageElement.alt = `image for ${site.site_name}`;
 
       // Append spans to list item
       li.appendChild(siteLink);
