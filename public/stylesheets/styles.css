@@ -174,7 +174,7 @@ nav ul li:hover a, .nav-highlight a {
   margin: 0;
 }
 
-#about section article p {
+#about section p {
   padding: 0;
   margin: 10px 0;
 }
@@ -193,14 +193,14 @@ h1, h2, h3 {
 }
 
 article {
-  padding: 2%
-  margin: 2%;
+  padding: 20px 
+  margin: 20px%;
 }
 
 article p {
   text-indent: 2em;
-  padding: 2%;
-  margin: 2% auto;
+  padding: 20px;
+  margin: 20px auto;
 }
 
 a {
