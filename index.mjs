@@ -44,11 +44,9 @@ app.use((error, req, res, next) => {
 app.use('/db', dbRouter);
 
 // Home Page
-/*
 app.get('/', (req, res) => {
     res.render('index');
 });
-*/
 
 app.get('/home', (req, res) => {
     res.render('index');
