@@ -153,20 +153,21 @@ nav ul li:hover a, .nav-highlight a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 500px;
+  width: 50%;
   margin: 0 auto;
 }
 
 .social-link {
-  padding: 5px;
   margin: 0;
-  background-color: var(--cornsilk);
-  border-radius: 30px;
+  padding: 0;
 }
 
 .social-img {
   width: 25px;
   margin: 0 auto;
+  padding: 5px;
+  background-color: var(--cornsilk);
+  border-radius: 15px;
 }
 
 #about section {
