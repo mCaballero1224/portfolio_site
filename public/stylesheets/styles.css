@@ -86,7 +86,7 @@ nav ul li:hover a, .nav-highlight a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  max-height: 100px;
+  max-height: 200px;
   padding: 5px 0;
   margin: 5px 0
   align-items: center;
