@@ -68,6 +68,12 @@ nav ul li:hover a, .nav-highlight a {
   color: var(--oxford-blue);
 }
 
+#library-list {
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .book-item span {
   font-size: 12px;
   font-weight: normal;
@@ -155,19 +161,22 @@ nav ul li:hover a, .nav-highlight a {
   justify-content: space-around;
   margin: 0 auto;
   padding: 0;
+  width: 50%;
 }
 
 .social-link {
   margin: 0;
   padding: 0;
+  padding: 8px;
+  background-color: var(--cornsilk);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .social-img {
-  width: 30px;
-  margin: 0 auto;
-  padding: 5px;
-  background-color: var(--cornsilk);
-  border-radius: 15px;
+  width: 25px;
+  margin: auto;
 }
 
 #about section {
