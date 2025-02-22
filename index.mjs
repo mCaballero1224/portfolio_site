@@ -8,7 +8,9 @@ import asyncHandler from 'express-async-handler';
 import mysql from 'mysql2';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 
+dotenv.config();
 import dbRouter from './routes/db.mjs';
 
 const app = express();
