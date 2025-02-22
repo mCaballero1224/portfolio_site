@@ -1,0 +1,24 @@
+extends template.pug
+
+block content
+  h2 Welcome to my little corner of the net
+  article
+    section
+      p. 
+        Whether you're a potential employer, collaborator, or just someone who
+        happened to stumble in here by chance, feel free to look about at what I have
+        to offer here!
+      hr
+  article
+    section
+      h3 My Library
+      ul#library-list
+    hr
+    section
+      h3 Cool Sites
+      ul#site-list
+    hr
+
+
+  script(src="/javascripts/library.js")
+  script(src="/javascripts/sites.js")

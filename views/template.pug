@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  include includes/head.pug
+  body
+    header 
+      h1
+        span Michael
+        a(href="/")
+          img#logo(src="android-chrome-192x192.png")
+        span Caballero
+      nav
+        ul
+          li#nav-home(class="nav-item"): a(href="/") Home
+          li#nav-about(class="nav-item"): a(href="/about") About
+          li#nav-contact(class="nav-item"): a(href="/contact") Contact
+          li#nav-projects(class="nav-item"): a(href="/projects") Projects
+    main
+      block content
+    footer
+      ul#social-links
+        li(class="social-link", id="github-social")
+          a(href="https://github.com/mCaballero1224", target="_blank")
+            img(src="/images/github.svg", class="social-img")
+        li(class="social-link", id="linkedin-social")
+          a(href="https://www.linkedin.com/in/mcaballero-dev/", target="_blank")
+            img(src="/images/linkedin.svg", class="social-img")
+        li(class="social-link", id="x-social")
+          a(href="/https://x.com/straysh333p", target="_blank")
+            img(src="/images/twitter-alt.svg", class="social-img")
+        li(class="social-link", id="youtube-social")
+          a(href="https://www.youtube.com/@michaelcaballero-dev",
+          target="_blank")
+            img(src="/images/youtube.svg", class="social-img")
+      p &copy; Michael Caballero (2025)
+    script(src="/javascripts/navbar.js")
