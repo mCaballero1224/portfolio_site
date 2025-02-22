@@ -168,6 +168,10 @@ nav ul li:hover a, .nav-highlight a {
   margin: 0 auto;
 }
 
+.about-title {
+  text-align: right;
+}
+
 main {
   padding: 2%;
   margin: 2%
