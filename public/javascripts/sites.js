@@ -20,8 +20,11 @@ const fetchSites = async () => {
       siteList.appendChild(li);
       // Set up content of list element
       li.classList.add('site-item');
+      titleLink = document.createElement('a');
+      titleLink.classList.add('title-link');
       titleElement = document.createElement('li');
       titleElement.classList.add('site-title');
+      titleLink.appendChild(titleElement');
       authorElement = document.createElement('li');
       authorElement.classList.add('site-author');
       siteImageElement = document.createElement('img');
@@ -34,6 +37,7 @@ const fetchSites = async () => {
 
       // Add data to spans
       titleElement.textContent = site.site_name;
+      titleLink.href = site.site_link;
       siteLink.href = site.site_link;
       siteLink.target = "_blank";
       authorElement.textContent = 'Author: ' + site.site_author;
