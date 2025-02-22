@@ -1,0 +1,197 @@
+:root {
+  /* CSS HSL */
+  --rich-black: hsla(216, 100%, 4%, 1);
+  --oxford-blue: hsla(211, 100%, 12%, 1);
+  --yale-blue: hsla(209, 100%, 20%, 1);
+  --gold: hsla(50, 100%, 52%, 1);
+  --cornsilk: hsla(49, 100%, 95%, 1);
+}
+
+body {
+  font-family: monospace;
+  background-color: var(--rich-black);
+  color: var(--cornsilk);
+  padding: 0;
+  margin: 0;
+  line-height: 1.25em;
+}
+
+header h1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto 0;
+  padding: 15px;
+}
+
+header h1 span {
+  margin: auto 0;
+}
+
+header h1 #logo {
+  height: 75px;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+nav {
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--oxford-blue);
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--gold);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li:hover a, .nav-highlight a {
+  background-color: var(--gold);
+  color: var(--oxford-blue);
+}
+
+.book-item span {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.book-title a {
+  font-weight: bold;
+}
+
+#site-list, #project-list {
+  list-style-type: none;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.site-item, .project-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-height: 100px;
+  padding: 5px 0;
+  margin: 5px 0
+  align-items: center;
+}
+
+.site-item:not(:last-child), .project-item:not(:last-child) {
+  border-bottom: solid 1px var(--gold);
+}
+
+.site-link, .project-link {
+  padding: 0;
+  margin: auto 0;
+}
+
+.site-link, .project-link {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-conent: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.site-image, .project-image {
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  background-color: var(--cornsilk);
+}
+
+.project-image {
+  border-radius: 15px;
+}
+
+.site-overview, .project-overview {
+  list-style-type: none;
+  padding: 10px 5px;
+  margin: 0;
+  overflow: scroll;
+}
+
+.site-overview li, .project-overview li {
+  padding: 5px 0;
+  margin: 0;
+}
+
+.site-title, .site-author, .project-title {
+  text-align: center;
+}
+
+.site-title, .project-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.site-description, .project-description {
+  text-indent: 2em;
+  line-height: 1.5;
+}
+
+#social-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.social-link {
+  padding: 5px;
+  margin: 0;
+  background-color: var(--cornsilk);
+  border-radius: 30px;
+}
+
+.social-img {
+  width: 25px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 2%;
+  margin: 2%
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+article {
+  padding: 2%
+  margin: 2%;
+}
+
+article p {
+  text-indent: 2em;
+  padding: 2%;
+  margin: 2% auto;
+}
+
+a {
+  color: var(--gold);
+}
+
+footer {
+  text-align: center;
+}
