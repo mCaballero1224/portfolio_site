@@ -53,6 +53,11 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
+// Blog Page
+app.get('/blog', (req, res) => {
+    res.render('blog');
+});
+
 // Contact Page
 app.get('/contact', (req, res) => {
     res.render('contact');
@@ -62,6 +67,7 @@ app.get('/contact', (req, res) => {
 app.get('/projects', (req, res) => {
     res.render('projects');
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
