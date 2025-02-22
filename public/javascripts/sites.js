@@ -24,7 +24,7 @@ const fetchSites = async () => {
       titleLink.classList.add('title-link');
       titleElement = document.createElement('li');
       titleElement.classList.add('site-title');
-      titleLink.appendChild(titleElement');
+      titleLink.appendChild(titleElement);
       authorElement = document.createElement('li');
       authorElement.classList.add('site-author');
       siteImageElement = document.createElement('img');
