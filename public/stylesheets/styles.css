@@ -24,6 +24,7 @@ header h1 {
   justify-content: center;
   margin: auto 0;
   padding: 15px;
+  width: 90%;
 }
 
 header h1 span {
