@@ -144,7 +144,6 @@ nav ul li:hover a, .nav-highlight a {
 }
 
 .site-description, .project-description {
-  text-indent: 2em;
   line-height: 1.5;
 }
 
