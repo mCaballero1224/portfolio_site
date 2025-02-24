@@ -16,20 +16,5 @@ html(lang="en")
           li#nav-projects(class="nav-item"): a(href="/projects") Projects
     main
       block content
-    footer
-      ul#social-links
-        li(class="social-link", id="github-social")
-          a(href="https://github.com/mCaballero1224", target="_blank")
-            img(src="/images/github.jpg", class="social-img", alt="link to my GitHub profile")
-        li(class="social-link", id="linkedin-social")
-          a(href="https://www.linkedin.com/in/mcaballero-dev/", target="_blank")
-            img(src="/images/linkedin.jpg", class="social-img", alt="link to my LinkedIn profile")
-        li(class="social-link", id="x-social")
-          a(href="/https://x.com/straysh333p", target="_blank")
-            img(src="/images/twitter-alt.jpg", class="social-img", alt="link to my Twitter/X profile")
-        li(class="social-link", id="youtube-social")
-          a(href="https://www.youtube.com/@michaelcaballero-dev",
-          target="_blank")
-            img(src="/images/youtube.jpg", class="social-img", alt="link to my youtube channel")
-      p &copy; Michael Caballero (2025)
+    include includes/footer.pug
     script(src="/javascripts/navbar.js")

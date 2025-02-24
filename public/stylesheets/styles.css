@@ -47,7 +47,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--oxford-blue);
+  background-color: var(--yale-blue);
 }
 
 nav ul li {
@@ -167,16 +167,16 @@ nav ul li:hover a, .nav-highlight a {
 .social-link {
   margin: 0;
   padding: 0;
-  padding: 8px;
-  background-color: var(--cornsilk);
-  border-radius: 25px;
   display: flex;
   align-items: center;
 }
 
-.social-img {
-  width: 25px;
-  margin: auto;
+.social-link a {
+  color: var(--cornsilk);
+}
+
+.social-link:hover a {
+  color: var(--gold);
 }
 
 #about section {
@@ -204,7 +204,7 @@ h1, h2, h3 {
 
 article {
   padding: 20px 
-  margin: 20px%;
+  margin: 20px;
 }
 
 article p {
@@ -217,6 +217,6 @@ a {
   color: var(--gold);
 }
 
-footer {
+footer p {
   text-align: center;
 }
