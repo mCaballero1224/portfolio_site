@@ -31,10 +31,17 @@ header h1 span {
   margin: auto 0;
 }
 
-header h1 #logo {
+#logo {
   height: 75px;
+  width: 75px;
   margin: 0 10px;
   border-radius: 15px;
+  background-color: var(--yale-blue);
+}
+
+#logo img {
+  height: 75px;
+  width: 75px;
 }
 
 nav {
@@ -68,6 +75,18 @@ nav ul li:hover a, .nav-highlight a {
   color: var(--oxford-blue);
 }
 
+.main-separator {
+  color: var(--yale-blue);
+  background-color: var(--yale-blue);
+  height: 2px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.site-separator {
+  color: var(--cornsilk);
+}
+
 #library-list {
   padding: 0;
   margin: 0 auto;
@@ -95,12 +114,8 @@ nav ul li:hover a, .nav-highlight a {
   flex-wrap: nowrap;
   max-height: 200px;
   padding: 5px 0;
-  margin: 5px 0
+  margin: 5px 0;
   align-items: center;
-}
-
-.site-item:not(:last-child), .project-item:not(:last-child) {
-  border-bottom: solid 1px var(--gold);
 }
 
 .site-link, .project-link {
@@ -133,6 +148,7 @@ nav ul li:hover a, .nav-highlight a {
   padding: 10px 5px;
   margin: 0;
   overflow: scroll;
+  max-height: 200px;
 }
 
 .site-overview li, .project-overview li {
@@ -159,16 +175,42 @@ nav ul li:hover a, .nav-highlight a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0;
   width: 50%;
 }
 
 .social-link {
-  margin: 0;
-  padding: 0;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+.social-link a {
+  text-decoration: none;
+  position: relative;
+}
+
+.social-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: var(--yale-blue);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index -1;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.social-link:hover::before {
+  width: 3.5em;
+  height: 3.5em;
 }
 
 .social-link a {
@@ -186,7 +228,6 @@ nav ul li:hover a, .nav-highlight a {
 
 #about section p {
   padding: 0;
-  margin: 10px 0;
 }
 
 .about-title {
@@ -195,7 +236,7 @@ nav ul li:hover a, .nav-highlight a {
 
 main {
   padding: 2%;
-  margin: 2%
+  margin: 4% auto;
 }
 
 h1, h2, h3 {
@@ -207,11 +248,13 @@ article {
   margin: 20px;
 }
 
-article p {
-  text-indent: 2em;
-  padding: 20px;
-  margin: 20px auto;
+section {
+  padding: 10px;
 }
+
+p {
+    font-size: 14px;
+  }
 
 a {
   color: var(--gold);
