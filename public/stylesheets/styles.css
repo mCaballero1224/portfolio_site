@@ -209,9 +209,9 @@ nav ul li:hover a, .nav-highlight a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 0;
-  width: 50%;
+  width: 70%;
 }
 
 .social-link {
@@ -226,25 +226,14 @@ nav ul li:hover a, .nav-highlight a {
 .social-link a {
   text-decoration: none;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-link::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background-color: var(--yale-blue);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index -1;
-  transition: width 0.3s ease, height 0.3s ease;
-}
-
-.social-link:hover::before {
-  width: 3.5em;
-  height: 3.5em;
+.social-description {
+  margin-top: 10px;
 }
 
 .social-link a {
