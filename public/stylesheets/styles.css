@@ -9,7 +9,7 @@
 
 body {
   font-family: monospace;
-  background-color: var(--rich-black);
+  background-color: var(--oxford-blue);
   color: var(--cornsilk);
   padding: 0;
   margin: 0;
@@ -118,9 +118,23 @@ nav ul li:hover a, .nav-highlight a {
   align-items: center;
 }
 
+.project-item {
+  border-radius: 15px;
+}
+
+.project-item {
+  background-color: var(--cornsilk);
+  color: var(--rich-black);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
 .site-link, .project-link {
   padding: 0;
   margin: auto 0;
+}
+
+.project-title a {
+  color: var(--yale-blue);
 }
 
 .site-link, .project-link {
@@ -129,23 +143,43 @@ nav ul li:hover a, .nav-highlight a {
   display: flex;
   justify-conent: center;
   align-items: center;
-  margin: 15px;
 }
 
-.site-image, .project-image {
-  padding: 0;
-  margin: 0;
+.site-image {
+  margin: auto 20px;
   width: 100px;
-  background-color: var(--cornsilk);
+}
+
+.image-container {
+  margin: 10px;
+  background-color: var(--gold);
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image-container:hover {
+  background-color: var(--yale-blue);
+}
+
+.image-container:hover .image-link {
+  color: var(--gold);
 }
 
 .project-image {
-  border-radius: 15px;
+}
+
+.image-link {
+  color: var(--rich-black);
 }
 
 .site-overview, .project-overview {
   list-style-type: none;
-  padding: 10px 5px;
+  padding: 0;
   margin: 0;
   overflow: scroll;
   max-height: 200px;
