@@ -28,17 +28,17 @@ const createDescription = (description) => {
   return descriptionElement;
 }
 
-const createImageLink = (imageUrl, link) => {
+const createImageLink = (classes, link) => {
   /* Create elements */
   let containerElement = document.createElement('span');
   let imageElement = document.createElement('i');
   let linkElement = document.createElement('a');
   /* Add classes to elements */
+  const iconClasses = classes.split(' ');
+  for (i = 0; i < iconClasses.length; i++) {
+    imageElement.classList.add(iconClasses[i]);
+  } 
   containerElement.classList.add('image-container');
-  imageElement.classList.add('project-image');
-  imageElement.classList.add('fa-solid');
-  imageElement.classList.add('fa-terminal');
-  imageElement.classList.add('fa-2xl');
   linkElement.classList.add('image-link');
   /* Append child elements*/
   containerElement.appendChild(linkElement);
@@ -75,7 +75,7 @@ const fetchprojects = async () => {
       /* Add element class */
       li.classList.add('project-item');
       /* Create image link element and append */
-      const imageLink = createImageLink(project.project_image, 
+      const imageLink = createImageLink(project.project_icon, 
         project.project_link);
       li.appendChild(imageLink);
       /* Create overview element and append */
