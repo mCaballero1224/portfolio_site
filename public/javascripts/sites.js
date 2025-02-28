@@ -51,7 +51,11 @@ const fetchSites = async () => {
       siteOverview.appendChild(titleElement);
       siteOverview.appendChild(authorElement);
       siteOverview.appendChild(siteDescriptionElement);
+      separator = document.createElement('hr');
+      separator.classList.add('site-separator');
+      siteList.appendChild(separator);
     });
+    siteList.removeChild(siteList.lastElementChild);
   } catch (error) {
     console.error('Error fetching data:', error);
   }
