@@ -30,19 +30,24 @@ const createDescription = (description) => {
 
 const createImageLink = (imageUrl, link) => {
   /* Create elements */
-  let imageElement = document.createElement('img');
+  let containerElement = document.createElement('span');
+  let imageElement = document.createElement('i');
   let linkElement = document.createElement('a');
   /* Add classes to elements */
+  containerElement.classList.add('image-container');
   imageElement.classList.add('project-image');
+  imageElement.classList.add('fa-solid');
+  imageElement.classList.add('fa-terminal');
+  imageElement.classList.add('fa-2xl');
   linkElement.classList.add('image-link');
-  /* Append link to image element as a child */
-  imageElement.appendChild(linkElement);
+  /* Append child elements*/
+  containerElement.appendChild(linkElement);
+  linkElement.appendChild(imageElement);
   /* Add attributes */
-  imageElement.src = imageUrl;
   linkElement.href = link;
   linkElement.target = "_blank";
 
-  return imageElement;
+  return containerElement;
 }
 
 const createOverview = (title, link, description) => {
