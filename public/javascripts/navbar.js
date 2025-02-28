@@ -5,6 +5,7 @@
 const highlightNav = () => {
   const navPaths = {
     "/": 0,
+    "/home": 0,
     "/about": 1,
     "/contact": 2,
     "/projects": 3
