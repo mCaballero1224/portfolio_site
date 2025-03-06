@@ -31,6 +31,10 @@ header h1 span {
   margin: auto 0;
 }
 
+.construction {
+  text-align: center;
+}
+
 #logo {
   height: 75px;
   width: 75px;
@@ -106,6 +110,9 @@ nav ul li:hover a, .nav-highlight a {
   list-style-type: none;
   margin: 20px auto;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-item, .project-item {
@@ -120,6 +127,7 @@ nav ul li:hover a, .nav-highlight a {
 
 .project-item {
   border-radius: 15px;
+  max-width: 500px;
 }
 
 .project-item {
@@ -209,7 +217,7 @@ nav ul li:hover a, .nav-highlight a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 0;
   width: 70%;
 }
@@ -250,7 +258,8 @@ nav ul li:hover a, .nav-highlight a {
 }
 
 #about section p {
-  padding: 0;
+  text-indent: 2em;
+  padding: 0 15px;
 }
 
 .about-title {
@@ -276,8 +285,8 @@ section {
 }
 
 p {
-    font-size: 14px;
-  }
+  font-size: 14px;
+}
 
 a {
   color: var(--gold);
